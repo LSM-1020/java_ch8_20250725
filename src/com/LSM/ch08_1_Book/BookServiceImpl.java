@@ -18,11 +18,12 @@ public class BookServiceImpl implements BookService {
 	public Book findBookByTitle(String title) {
 		// TODO Auto-generated method stub
 		
-		for(Book bookTemp:books);
+		for(Book bookTemp:books) {
 			if(bookTemp.getTitle().equals(title)){
 				return bookTemp;
 			}
 		// 찾고자 하는 책 제목과 일치하는 책을 찾은 경우는 그 객체를 반환
+		}
 			return null; //책 제목이 일치하는 책을 찾지 못했을때 null
 	}
 

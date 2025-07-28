@@ -28,6 +28,11 @@ public class BookMain {
 				int bookId = scanner.nextInt();
 				System.out.println("도서제목 : ");
 				String bookTitle = scanner.nextLine();
+				System.out.println("도서저자 : ");
+				String bookAuthor = scanner.nextLine();
+				
+				Book book = new Book (bookId, bookTitle, bookAuthor);
+				bookService.addBook(book);
 			case 2:
 			case 3:
 			case 4:
